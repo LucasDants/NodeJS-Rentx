@@ -1,6 +1,6 @@
 import { Category } from "../entities/Category";
 
-interface ICreateCategoryDTO {
+export interface ICreateCategoryDTO {
     name: string;
     description: string;
 }
