@@ -31,7 +31,6 @@ class CreateRentalUseCase {
 
         const carNotAvailable =
             await this.rentalsRepository.findOpenRentalByCar(car_id);
-
         if (carNotAvailable) {
             throw new AppError("Car is not available");
         }
