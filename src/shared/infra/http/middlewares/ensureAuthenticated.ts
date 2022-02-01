@@ -17,8 +17,6 @@ export async function ensureAuthenticated(
 ) {
     const authHeader = req.headers.authorization;
 
-    const userTokensRepository = new UsersTokensRepository();
-
     if (!authHeader) {
         throw new AppError("Token missing", 401);
     }
