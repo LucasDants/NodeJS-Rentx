@@ -7,21 +7,11 @@ module.exports = {
         [
             "module-resolver", {
                 alias: {
-                    "@modules": [
-                        "./src/modules"
-                    ],
-                    "@config": [
-                        "./src/config"
-                    ],
-                    "@errors": [
-                        "./src/errors"
-                    ],
-                    "@shared": [
-                        "./src/shared"
-                    ],
-                    "@utils": [
-                        "./src/utils"
-                    ]
+                    "@modules": "./src/modules",
+                    "@config": "./src/config",
+                    "@errors": "./src/errors",
+                    "@shared": "./src/shared",
+                    "@utils": "./src/utils"
                 }
             }
         ],
